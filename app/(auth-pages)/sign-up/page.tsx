@@ -39,9 +39,16 @@ export default async function Signup(props: {
             minLength={6}
             required
           />
+          <Input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
           <SubmitButton formAction={signUpAction} pendingText="Signing up...">
             Sign up
           </SubmitButton>
+
           <FormMessage message={searchParams} />
         </div>
       </form>

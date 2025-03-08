@@ -7,6 +7,17 @@ import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "./globals.css";
+import homePage from "@/app/homePage/page"
+import QuizQuestion from "./question1/page";
+import question2 from "@/app/question2/page"
+import question3 from "@/app/question3/page"
+import question4 from "@/app/question4/page"
+import question5 from "@/app/question5/page"
+import question6 from "@/app/question6/page"
+import question7 from "@/app/question7/page"
+import question8 from "@/app/question8/page"
+import question9 from "@/app/question9/page"
+
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -53,21 +64,6 @@ export default function RootLayout({
               <div className="flex flex-col gap-20 max-w-5xl p-5">
                 {children}
               </div>
-
-              <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">
-                <p>
-                  Powered by{" "}
-                  <a
-                    href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-                    target="_blank"
-                    className="font-bold hover:underline"
-                    rel="noreferrer"
-                  >
-                    Supabase
-                  </a>
-                </p>
-                <ThemeSwitcher />
-              </footer>
             </div>
           </main>
         </ThemeProvider>
